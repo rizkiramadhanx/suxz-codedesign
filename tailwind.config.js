@@ -11,6 +11,9 @@ export default {
         'gray-brand': '#22293E',
         'gray-brand-2': '#222831',
       },
+      gridTemplateColumns: {
+        footer: '2fr 3fr',
+      },
     },
   },
   plugins: [],

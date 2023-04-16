@@ -36,3 +36,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.carousel-button-group {
+  background-color: #8c82fc;
+}

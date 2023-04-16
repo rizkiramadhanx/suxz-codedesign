@@ -6,6 +6,7 @@ import {
   About,
   Client,
   Testimony,
+  Footer,
 } from '@/components/section';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Client />
       <Testimony />
+      <Footer />
     </>
   );
 }
