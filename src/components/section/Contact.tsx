@@ -10,7 +10,7 @@ const Contact = () => {
           backgroundImage: `url('src/assets/contact-background.png')`,
         }}
       >
-        <div className="py-[80px] text-center items-center flex flex-col justify-end gap-y-6">
+        <div className="py-[80px] text-center items-center flex flex-col justify-end gap-y-6 text-white">
           <div>
             <h1 className="md:text-[44px] text-3xl  font-extrabold">
               So? What Are You Waiting For

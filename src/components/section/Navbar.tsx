@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Logo from '@/assets/logo.svg';
 import Hamburger from '@/assets/hamburger.svg';
 import { styles } from '@/css/styles';
+import useWidth from '@/hooks/useWidth';
+import Sidebar from '../molecules/Sidebar';
 
 const Navbar = () => {
   /*
@@ -24,9 +26,25 @@ const Navbar = () => {
     };
   });
 
+  // Toggle sidebar
+
+  const { width } = useWidth();
+
+  const [open, SetIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    SetIsOpen(!open);
+  };
+
+  useEffect(() => {
+    if (width > 768) {
+      SetIsOpen(false);
+    }
+  }, [width]);
+
   return (
     <nav
-      className={`bg-white bg-opacity-20 backdrop-blur-md sticky top-0 z-[999]  transition-shadow ${
+      className={`bg-white bg-opacity-20 backdrop-blur-md sticky z-50 top-0  transition-shadow ${
         +onTop ? '' : 'shadow-sm'
       }`}
     >
@@ -34,6 +52,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between sm:h-[100px] h-[70px]  text-xl font-semibold">
           <div className="flex items-center">
             <img src={Logo} width={100} />
+            <Sidebar isOpen={open} setIsOpen={() => null}>
+              H
+            </Sidebar>
             <ul className="md:flex items-center ml-[70px] gap-x-10  text-[#394360] hidden">
               <li className="text-underline whitespace-nowrap">Home</li>
               <li className="text-underline whitespace-nowrap">Learnings</li>
@@ -47,7 +68,11 @@ const Navbar = () => {
               Sign Up
             </button>
           </div>
-          <img src={Hamburger} className="md:hidden" />
+          <img
+            src={Hamburger}
+            className="md:hidden cursor-pointer"
+            onClick={toggleSidebar}
+          />
         </div>
       </div>
     </nav>

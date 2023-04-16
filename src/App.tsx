@@ -1,3 +1,4 @@
+import Layout from './components/molecules/Layout';
 import './index.css';
 import {
   Hero,
@@ -12,7 +13,7 @@ import {
 
 function App() {
   return (
-    <>
+    <Layout>
       <Navbar />
       <Hero />
       <Pricing />
@@ -21,7 +22,7 @@ function App() {
       <Testimony />
       <Contact />
       <Footer />
-    </>
+    </Layout>
   );
 }
 

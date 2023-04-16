@@ -25,7 +25,7 @@ const Pricing = () => {
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-[70px] gap-y-5 mt-[60px]">
             {[1, 1, 1, 1].map((_, key) => (
               <div
-                className="p-[30px] bg-white rounded-[12px] hover:bg-purple-brand hover:scale-105 transition-all hover:origin-top hover:text-white text-gray-brand-2 delay-100"
+                className="p-[30px] bg-white rounded-[12px] hover:bg-purple-brand hover:scale-105 transition-all hover:origin-top hover:text-white shadow-md text-gray-brand-2 delay-100"
                 key={key}
               >
                 <img src={Pricing1} alt={`Pricing ${key}`} />
