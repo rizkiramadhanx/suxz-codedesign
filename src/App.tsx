@@ -1,10 +1,13 @@
 import './index.css';
-import { Navbar } from './components/section';
+import { Hero, Navbar, Pricing, About } from '@/components/section';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Hero />
+      <Pricing />
+      <About />
     </>
   );
 }
