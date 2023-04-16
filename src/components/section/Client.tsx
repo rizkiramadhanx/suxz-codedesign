@@ -3,14 +3,14 @@ import Marquee from 'react-fast-marquee';
 
 import { styles } from '@/css/styles';
 
-import Github from '@/assets/client/Github.svg';
-import Amazon from '@/assets/client/Amazon.svg';
-import Linkedin from '@/assets/client/Linkedin.svg';
-import Medium from '@/assets/client/Medium.svg';
-import Paypal from '@/assets/client/Paypal.svg';
-import Redis from '@/assets/client/Redis.svg';
-import Microsoft from '@/assets/client/Microsoft.svg';
-import Reddit from '@/assets/client/Reddit.svg';
+import Github from '@/assets/client/github.svg';
+import Amazon from '@/assets/client/amazon.svg';
+import Linkedin from '@/assets/client/linkedin.svg';
+import Medium from '@/assets/client/medium.svg';
+import Paypal from '@/assets/client/paypal.svg';
+import Redis from '@/assets/client/redis.svg';
+import Microsoft from '@/assets/client/microsoft.svg';
+import Reddit from '@/assets/client/reddit.svg';
 
 const Client = () => {
   return (
