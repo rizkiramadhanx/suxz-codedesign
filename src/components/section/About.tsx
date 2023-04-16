@@ -22,19 +22,19 @@ const About = () => {
             </p>
             <ul className="sm:mt-[50px] mt-6 flex flex-col gap-y-4 sm:gap-y-[30px] text-xl font-semibold">
               <li className="flex items-center">
-                <img src={listAbout} alt="cuak" className="h-[50px]" />
+                <img src={listAbout} className="h-[50px]" />
                 <span className="ml-2 lg:ml-5">
                   Study and produce creation to get a job
                 </span>
               </li>
               <li className="flex items-center">
-                <img src={listAbout} alt="cuak" className="h-[50px]" />
+                <img src={listAbout} className="h-[50px]" />
                 <span className="ml-2 lg:ml-5">
                   Study and produce creation to get a job
                 </span>
               </li>
-              <li className="flex items-cente">
-                <img src={listAbout} alt="cuak" className="h-[50px]" />
+              <li className="flex items-center">
+                <img src={listAbout} className="h-[50px]" />
                 <span className="ml-2 lg:ml-5">
                   Study and produce creation to get a job
                 </span>

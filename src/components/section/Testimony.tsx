@@ -34,9 +34,14 @@ const testimonialData = [
   },
 ];
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 800 },
+  lgDeskop: {
+    breakpoint: { max: 3000, min: 1200 },
     items: 4,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  desktop: {
+    breakpoint: { max: 1200, min: 800 },
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
