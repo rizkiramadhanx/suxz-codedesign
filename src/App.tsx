@@ -1,5 +1,12 @@
 import './index.css';
-import { Hero, Navbar, Pricing, About } from '@/components/section';
+import {
+  Hero,
+  Navbar,
+  Pricing,
+  About,
+  Client,
+  Testimony,
+} from '@/components/section';
 
 function App() {
   return (
@@ -8,6 +15,8 @@ function App() {
       <Hero />
       <Pricing />
       <About />
+      <Client />
+      <Testimony />
     </>
   );
 }

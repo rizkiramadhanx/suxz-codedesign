@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-white bg-opacity-20 backdrop-blur-md sticky top-0  transition-shadow ${
+      className={`bg-white bg-opacity-20 backdrop-blur-md sticky top-0 z-[999]  transition-shadow ${
         +onTop ? '' : 'shadow-sm'
       }`}
     >

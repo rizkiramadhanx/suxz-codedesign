@@ -12,6 +12,8 @@
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.3.5",
+    "react-responsive-carousel": "^3.2.23",
     "vite-plugin-fonts": "^0.7.0"
   },
   "devDependencies": {
