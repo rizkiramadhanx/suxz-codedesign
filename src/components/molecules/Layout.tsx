@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <div className="top-0 left-0 w-screen fixed z-40 shadow-2xl bg-gray-300 z-[51]">
+      <div className="top-0 left-0 w-screen fixed shadow-2xl bg-gray-300 z-[51]">
         <div style={inlineStyle} />
       </div>
       {children}

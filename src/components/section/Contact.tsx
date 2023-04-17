@@ -1,5 +1,5 @@
 import { styles } from '@/css/styles';
-import React from 'react';
+import backgroundImage from '@/assets/contact-background.png';
 
 const Contact = () => {
   return (
@@ -7,7 +7,7 @@ const Contact = () => {
       <div
         className={`${styles['main-container']} object-contain bg-no-repeat`}
         style={{
-          backgroundImage: `url('src/assets/contact-background.png')`,
+          backgroundImage: `url(${backgroundImage})`,
         }}
       >
         <div className="py-[80px] text-center items-center flex flex-col justify-end gap-y-6 text-white">

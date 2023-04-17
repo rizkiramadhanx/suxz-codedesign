@@ -3,7 +3,9 @@ import Logo from '@/assets/logo.svg';
 import Hamburger from '@/assets/hamburger.svg';
 import { styles } from '@/css/styles';
 import useWidth from '@/hooks/useWidth';
-import Sidebar from '../molecules/Sidebar';
+import Drawer from 'react-modern-drawer';
+
+import 'react-modern-drawer/dist/index.css';
 
 const Navbar = () => {
   /*
@@ -36,6 +38,10 @@ const Navbar = () => {
     SetIsOpen(!open);
   };
 
+  const toggleDrawer = () => {
+    SetIsOpen((prevState) => !prevState);
+  };
+
   useEffect(() => {
     if (width > 768) {
       SetIsOpen(false);
@@ -48,19 +54,58 @@ const Navbar = () => {
         +onTop ? '' : 'shadow-sm'
       }`}
     >
+      <Drawer open={open} onClose={toggleDrawer} direction="left">
+        <div className="flex flex-col mt-2" onClick={() => SetIsOpen(false)}>
+          <img src={Logo} width={100} />
+          <div className="flex flex-col gap-y-2 text-[#394360] mt-2 border-t">
+            <a className="text-underline whitespace-nowrap ml-1" href="#home">
+              Home
+            </a>
+            <a
+              className="text-underline whitespace-nowrap ml-1"
+              href="#learning"
+            >
+              Learnings
+            </a>
+            <a className="text-underline whitespace-nowrap ml-1" href="#about">
+              About Us
+            </a>
+            <a
+              className="text-underline whitespace-nowrap ml-1"
+              href="#testimonial"
+            >
+              Testimonial
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col border bottom-1 mt-2 gap-y-2">
+          <button className="text-purple-brand  ml-1 text-left">Login</button>
+          <button className="bg-purple-brand pl-1 text-white h-[30px] text-left">
+            Sign Up
+          </button>
+        </div>
+      </Drawer>
       <div className={`${styles['main-container']}} m-auto`}>
         <div className="flex items-center justify-between sm:h-[100px] h-[70px]  text-xl font-semibold">
           <div className="flex items-center">
             <img src={Logo} width={100} />
-            <Sidebar isOpen={open} setIsOpen={() => null}>
-              H
-            </Sidebar>
-            <ul className="md:flex items-center ml-[70px] gap-x-10  text-[#394360] hidden">
-              <li className="text-underline whitespace-nowrap">Home</li>
-              <li className="text-underline whitespace-nowrap">Learnings</li>
-              <li className="text-underline whitespace-nowrap">About Us</li>
-              <li className="text-underline whitespace-nowrap">Testimonial</li>
-            </ul>
+            <div className="md:flex items-center ml-[70px] gap-x-10  text-[#394360] hidden">
+              <a className="text-underline whitespace-nowrap" href="#home">
+                Home
+              </a>
+              <a className="text-underline whitespace-nowrap" href="#learning">
+                Learnings
+              </a>
+              <a className="text-underline whitespace-nowrap" href="#about">
+                About Us
+              </a>
+              <a
+                className="text-underline whitespace-nowrap"
+                href="#testimonial"
+              >
+                Testimonial
+              </a>
+            </div>
           </div>
           <div className="lg:flex gap-x-[42px] hidden">
             <button className="text-purple-brand">Login</button>

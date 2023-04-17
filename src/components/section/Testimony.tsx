@@ -58,7 +58,7 @@ const responsive = {
 
 const Testimony = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white" id="testimonial">
       <div className={`${styles['main-container']}`}>
         <div className="py-[80px]">
           <div className="flex flex-col gap-y-4 text-center">

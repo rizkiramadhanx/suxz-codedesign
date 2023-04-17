@@ -40,3 +40,7 @@
 .carousel-button-group {
   background-color: #8c82fc;
 }
+
+html {
+  scroll-behavior: smooth;
+}

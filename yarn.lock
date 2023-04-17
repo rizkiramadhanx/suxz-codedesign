@@ -995,6 +995,11 @@
     "debounce" "^1.2.0"
     "easy-bem" "^1.1.1"
 
+"react-modern-drawer@^1.2.0":
+  "integrity" "sha512-GBQaeDNpnt6GFm3U9y/wzkZerP6R92CrgC9ge3/PHCm0F0LdUzt7rjFSwdd47Pdy6+FhXKR2rn7VxW3pl/+m9w=="
+  "resolved" "https://registry.npmjs.org/react-modern-drawer/-/react-modern-drawer-1.2.0.tgz"
+  "version" "1.2.0"
+
 "react-multi-carousel@^2.8.3":
   "integrity" "sha512-wpHwq9Y/ydX+5yxpW8250jMOtg8NuBVlFrDTuS5/MdN0uD0zFIHxVbXhzzc4WFeQl6bn9ZLo8Fef2Ik5aBRgmw=="
   "resolved" "https://registry.npmjs.org/react-multi-carousel/-/react-multi-carousel-2.8.3.tgz"
@@ -1005,7 +1010,7 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
   "version" "0.14.0"
 
-"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18", "react@^18.2.0", "react@>= 16.8.0 || 18.0.0", "react@>=16.8.0":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18", "react@^18.2.0", "react@>= 16.8.0 || 18.0.0", "react@>=16.8.0", "react@>16.0.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
